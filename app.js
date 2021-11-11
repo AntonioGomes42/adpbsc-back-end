@@ -25,32 +25,32 @@ function getData(){
         return new Promise((res) => {
             goOnline(db);
             onValue(ref(db, 'ADPBSCADM1/program'), (snapshot) => {
-            const data = (snapshot.val()) || false;
-            const dataTransformed = JSON.parse(data);
+            const returnedDbData = (snapshot.val()) || false;
+            const transformedDbData = JSON.parse(returnedDbData);
             goOffline(db);
-            res(dataTransformed);
+            res(transformedDbData);
             }, {
             onlyOnce: true
             });     
     });
 }
-// -------- Function to organize the data return ------------
-async function run(){
+// -------- Function to organize data return ------------
+async function tidyUpData(){
     const data = await getData();
     return new Promise((res) => {
-        const jsonArray = [];
-        data.forEach(element => {
-                const dataJson = {
-                    date:element[0],
-                    dayWeek:element[1],
-                    service:element[2],
-                    time:element[3],
-                    inCharger:element[4],
-                    urlAudio:element[5]
+        const jsonDataArray = [];
+        data.forEach(arrayElement => {
+                const jsonData = {
+                    date:arrayElement[0],
+                    dayWeek:arrayElement[1],
+                    service:arrayElement[2],
+                    time:arrayElement[3],
+                    inCharger:arrayElement[4],
+                    urlAudio:arrayElement[5]
                 }
-                jsonArray.push(dataJson);
+                jsonDataArray.push(jsonData);
         });
-        res(jsonArray);
+        res(jsonDataArray);
     });
 }
 
@@ -58,16 +58,16 @@ async function run(){
 
 server.use(express.static("public"))
 
-server.get('/', async (req, res) => {
+server.get('/', async (req,res) => {
     try{
-        res.send(JSON.stringify(await run()));
+        res.send(JSON.stringify(await tidyUpData()));
     }catch(error){
         console.log(error);
     }
 });
   
 server.listen(process.env.PORT || port, () => {
-    console.log(`"Server is running...")`)
+    console.log(`Server is running...`)
 });
 
 
