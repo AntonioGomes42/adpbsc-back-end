@@ -54,6 +54,10 @@ async function run(){
     });
 }
 
+// --------- Server functions ---------
+
+server.use(express.static("public"))
+
 server.get('/', async (req, res) => {
     try{
         res.send(JSON.stringify(await run()));
@@ -62,8 +66,8 @@ server.get('/', async (req, res) => {
     }
 });
   
-server.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+server.listen(process.env.PORT || port, () => {
+    console.log(`"Server is running...")`)
 });
 
 
