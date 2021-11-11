@@ -66,6 +66,8 @@ server.get('/', async (req,res) => {
     }
 });
   
+
+//Server runner
 server.listen(process.env.PORT || port, () => {
     console.log(`Server is running...`)
 });
