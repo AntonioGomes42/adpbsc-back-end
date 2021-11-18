@@ -1,0 +1,271 @@
+*{
+    font-family: 'Open Sans','Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: #232B52FE;
+}
+
+#header{
+    display: flex;
+    margin: 15px 10px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 90;
+    justify-content:space-evenly;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+#header-identification{
+    margin-left: 4rem;
+    display:flex;
+    flex:1;
+}
+
+#header-identification-text{
+    margin-left: 1rem;
+}
+
+#logo{
+    width: 110px;
+}
+
+.textoLogo{
+    color: #ecf0f1;
+}
+
+.sigla{
+    font-size: 40px;
+    letter-spacing: 0.35rem;
+    font-weight: 600;
+}
+
+.cidade{
+    text-align: left;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+#header-nav-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 80px;
+    
+    
+}
+
+.button{
+    border-radius: 20px;
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #232B52FE;
+    width: 115px;
+    height: 50px;
+    font-weight: 00;
+}
+
+.hover{
+    background-color: #ecf0f1;
+    transition: all 0.35s ease;
+    transition-delay: 50ms;
+}
+
+#home{
+    color: #232B52FE;
+}
+
+
+#gallery{
+    margin-left: 10px;
+    color: #ecf0f1;
+}
+
+#about{
+    color: #ecf0f1;
+    margin-left: 10px;
+}
+
+#splitter {
+    margin: auto;
+    height: 0.13rem;
+    width: 93vw;
+    background-color: #ecf0f1;
+}
+
+main{
+    display: flex;
+    width: calc(80vw - 10px);
+    height: calc(80vh - 10px);
+    margin: 20px auto 10px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+#primaryCard{
+    display: relative;
+    background-color: white;
+    width:60%;
+    height: 100%;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#primaryCard #top{
+    display: relative;
+    top:0px;
+    height: calc(91% - 50px);
+}
+
+#primaryCard #top #name{
+    padding-left: 30px;
+    margin-top:50px;
+    font-size: 45px;
+    font-style: bold;
+}
+
+#primaryCard #top #service{
+    padding-left: 40px;
+    margin-top: 10px;
+    display: block;
+    font-size: 20px;
+    font-style: bold;
+}
+
+
+#primaryCard #bottom{
+    height: 9%;
+    bottom: 0px;   
+}
+
+#primaryCard #bottom hr{
+    border: none;
+    background-color: black;
+    height: 0.005rem;
+    width: 80%;
+    margin: auto;
+}
+
+#primaryCard #bottom a{
+    padding-top: 4px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#secondContainer{
+    width: 100%;
+    height: calc( 100% - 10px);   
+}
+
+
+#secondCard{
+    overflow: hidden;
+    display: relative;
+    background-color: white;
+    height: 50%;
+    border-radius:5px;
+    margin-bottom: 10px;
+}
+
+#secondCard #top{
+    height: 87%;
+    top: 0px;
+}
+
+#secondCard #bottom{
+    height: 13%;
+    bottom: 0px;
+}
+
+#secondCard #top #name{
+    padding-top: 30px;
+    padding-left: 50px;
+    font-size: 45px;
+    font-style: bold;
+}
+
+#secondCard #top #service{
+    font-size: 20px;
+    padding-top: 8px;
+    padding-left: 61px;
+}
+
+#secondCard #bottom hr{
+    border: none;
+    background-color: black;
+    height: 0.005rem;
+    width: 80%;
+    margin: auto;
+}
+
+#secondCard #bottom a{
+    
+    padding-top: 1.5px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#bellowContainer{
+    width: calc(100% );
+    border-radius:5px;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+}
+
+#bellowContainer > div {
+    flex-grow: 1;
+}
+
+.bellowCards{
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#firstCard{
+    margin-left: 0px;
+}
+
+
+.bellowCards #name{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 24px;
+    height: 83%;
+}
+
+.bellowCards hr{
+    border: none;
+    background-color: black;
+    height: 0.005rem;
+    width: 80%;
+    margin: auto;
+}
+
+.bellowCards a{
+    padding-top: 3px;
+    display: block;
+    text-align: center;
+}
