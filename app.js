@@ -23,7 +23,8 @@ server.get('/api/v1', async (req,res) => {
 
 server.get('/', async (req,res)=>{
     const dataJson = await getDataJson();
-    res.render(dataJson.templateToRender);
+    console.log(await dataJson.data[0].date);
+    res.render(dataJson.templateToRender, { dataToRender:dataJson.data});
 })
 
 //Server runner

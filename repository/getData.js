@@ -47,6 +47,19 @@ async function getData(){
                 };
                 jsonDataArray.push(jsonData);
         });
+        // for (let index = 0; index < data.length; index++) {
+        //     // const element = array[index];
+        //     const jsonData = {
+        //                     `date${index}`:data[index][0],
+        //                     dayWeek:data[index][1],
+        //                     service:data[index][2],
+        //                     time:data[index][3],
+        //                     inCharger:data[index][4],
+        //                     urlAudio:data[index][5]
+        //                 };
+
+            
+        // }
         res(jsonDataArray);
     });
 }
