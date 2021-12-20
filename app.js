@@ -1,7 +1,7 @@
 // Imports
 import express from 'express';
-import getData  from './repository/getData.js'
-import getDataJson from './service/renderService.js';
+import getData from './repository/getData.js';
+import renderTemplate from './service/renderService.js'
 // Consts
 const server = express();
 const port = 3000;
@@ -21,11 +21,9 @@ server.get('/api/v1', async (req,res) => {
     }
 });
 
-server.get('/', async (req,res)=>{
-    const dataJson = await getDataJson();
-    console.log(await dataJson.data[0].date);
-    res.render(dataJson.templateToRender, { dataToRender:dataJson.data});
-})
+server.get('/', async (req, res)=>{
+    await renderTemplate(req,res);
+});
 
 //Server runner
 server.listen(process.env.PORT || port, () => {

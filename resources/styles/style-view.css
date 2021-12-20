@@ -1,0 +1,167 @@
+*{
+    font-family: 'Open Sans','Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: #232B52FE;
+}
+
+#header{
+    display: flex;
+    margin: 15px 10px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 90;
+    justify-content:space-evenly;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+#header-identification{
+    margin-left: 4rem;
+    display:flex;
+    flex:1;
+}
+
+#header-identification-text{
+    margin-left: 1rem;
+}
+
+#logo{
+    width: 110px;
+}
+
+.textoLogo{
+    color: #ecf0f1;
+}
+
+.sigla{
+    font-size: 40px;
+    letter-spacing: 0.35rem;
+    font-weight: 600;
+}
+
+.cidade{
+    text-align: left;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+#header-nav-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 80px;
+    
+    
+}
+
+.button{
+    border-radius: 20px;
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #232B52FE;
+    width: 115px;
+    height: 50px;
+    font-weight: 00;
+}
+
+.hover{
+    background-color: #ecf0f1;
+    transition: all 0.35s ease;
+    transition-delay: 50ms;
+}
+
+#home{
+    color: #232B52FE;
+}
+
+
+#gallery{
+    margin-left: 10px;
+    color: #ecf0f1;
+}
+
+#about{
+    color: #ecf0f1;
+    margin-left: 10px;
+}
+
+#splitter {
+    margin: auto;
+    height: 0.13rem;
+    width: 93vw;
+    background-color: #ecf0f1;
+}
+
+main{
+    margin: auto;
+    display: block;
+    width: 70vw;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#viewcard{
+    margin: 20px auto 10px auto;
+    display: block;
+    /* margin: 10px auto 10px auto; */
+    background-color: white;
+    width:100%;
+    height:calc(100% - 30px);
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+#day{
+    padding-top: 80px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 85px;
+}
+
+#data{
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 33px;
+}
+
+#incumbents{
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#splitter-viewcard {
+    margin: 20px auto;
+    height: 0.15rem;
+    width: 93%;
+    background-color: black;
+}
+
+
+
+#text-view{
+    font-size: 30px;
+    overflow-y: auto;
+    height: 70vh;
+    text-align: justify;
+    width: 88%;
+    margin: auto;
+}
+

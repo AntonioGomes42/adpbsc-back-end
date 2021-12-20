@@ -1,17 +1,23 @@
-import getData from '../repository/getData.js'
+import getData from "../repository/getData.js";
 
-async function getDataJson(){
+async function renderTemplate(req,res){
     const data = await getData();
-    return new Promise((res)=>{
-        try {
-            const templateToRender = (data.length > 5 ?'home':('home-'+data.length));
-            res({"templateToRender":templateToRender,"data":data});
-        } catch (error) {
-            res({"templateToRender":'error',"data":"Não Encontrado"})
+    return new Promise((resolve)=>{
+        const dataLength = data.length;
+        switch (true) {
+            case dataLength>0 && dataLength<=5:
+                res.render(('home-'+dataLength), { dataToRender:data});
+                break;
+            case dataLength>5:
+                res.render('home', { dataToRender:data});
+                break;
+            case dataLength == -1:
+                console.log("erro");
+                res.send("erro");
+                break;
         }
-        
-    })
+    })       
 }
 
-
-export default getDataJson;
+export default renderTemplate;
+    
