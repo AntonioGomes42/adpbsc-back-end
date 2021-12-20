@@ -4,7 +4,6 @@ import transformDBData from './transformDBData.js';
 async function getData(){
     const dbData = await getDBData()
     const data = await transformDBData(dbData);
-    
     return data;
 }
 
