@@ -2,6 +2,7 @@
 const home = document.getElementById('home');
 const gallery = document.getElementById('gallery');
 const about = document.getElementById('about');
+const main = document.getElementById('container');
 //Listeners
 //MouseOver
 home.addEventListener('mouseover', onHover)
@@ -11,6 +12,8 @@ about.addEventListener('mouseover', onHover)
 home.addEventListener('mouseout', onMouseOut)
 gallery.addEventListener('mouseout', onMouseOut)
 about.addEventListener('mouseout', onMouseOut)
+//OnClick
+main.addEventListener('click',openViewPage);
 // Control page functions 
 function onHover(event){
     removeActivatedFromButton();
@@ -79,5 +82,6 @@ function whoContainsActivatedClass(){
  return {id:"error"};
 }
 
-// Fetch data functions
-fetch("https://adpbsc-back-end.herokuapp.com/",{method:'GET',mode: 'cors'}).then(data=>console.log(data))
+function openViewPage(event){
+    window.open(`/${event.target.classList[1]}`,'_self');
+}

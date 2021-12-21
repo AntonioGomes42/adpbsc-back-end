@@ -129,12 +129,14 @@ main{
 }
 
 #primaryCard #top{
+    pointer-events: none;
     display: relative;
     top:0px;
     height: calc(91% - 50px);
 }
 
 #primaryCard #top #name{
+    pointer-events: none;
     padding-left: 30px;
     margin-top:50px;
     font-size: 45px;
@@ -142,6 +144,7 @@ main{
 }
 
 #primaryCard #top #service{
+    pointer-events: none;
     padding-left: 40px;
     margin-top: 10px;
     display: block;
@@ -151,11 +154,13 @@ main{
 
 
 #primaryCard #bottom{
+    pointer-events: none;
     height: 9%;
     bottom: 0px;   
 }
 
 #primaryCard #bottom hr{
+    pointer-events: none;
     border: none;
     background-color: black;
     height: 0.005rem;
@@ -164,6 +169,7 @@ main{
 }
 
 #primaryCard #bottom a{
+    pointer-events: none;
     padding-top: 4px;
     display: block;
     width: 80%;
@@ -187,11 +193,13 @@ main{
 }
 
 #secondCard #top{
+    pointer-events: none;
     height: 87%;
     top: 0px;
 }
 
 #secondCard #bottom{
+    pointer-events: none;
     height: 13%;
     bottom: 0px;
 }
@@ -201,12 +209,14 @@ main{
     padding-left: 50px;
     font-size: 45px;
     font-style: bold;
+    pointer-events: none;
 }
 
 #secondCard #top #service{
     font-size: 20px;
     padding-top: 8px;
     padding-left: 61px;
+    pointer-events: none;
 }
 
 #secondCard #bottom hr{
@@ -215,10 +225,11 @@ main{
     height: 0.005rem;
     width: 80%;
     margin: auto;
+    pointer-events: none;
 }
 
 #secondCard #bottom a{
-    
+    pointer-events: none;
     padding-top: 1.5px;
     display: block;
     width: 80%;
@@ -236,16 +247,19 @@ main{
 }
 
 #thirdCard #top{
+    pointer-events: none;
     height: 87%;
     top: 0px;
 }
 
 #thirdCard #bottom{
+    pointer-events: none;
     height: 13%;
     bottom: 0px;
 }
 
 #thirdCard #top #name{
+    pointer-events: none;
     padding-top: 30px;
     padding-left: 50px;
     font-size: 45px;
@@ -253,12 +267,14 @@ main{
 }
 
 #thirdCard #top #service{
+    pointer-events: none;
     font-size: 20px;
     padding-top: 8px;
     padding-left: 61px;
 }
 
 #thirdCard #bottom hr{
+    pointer-events: none;
     border: none;
     background-color: black;
     height: 0.005rem;
@@ -267,7 +283,7 @@ main{
 }
 
 #thirdCard #bottom a{
-    
+    pointer-events: none;
     padding-top: 1.5px;
     display: block;
     width: 80%;

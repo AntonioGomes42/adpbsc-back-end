@@ -36,13 +36,16 @@
     <main>
 
         <div id="viewcard">
-            <h1 id="day">Segunda-Feira</h1>
-            <h2 id="data">20/08/2001</h2>
-            <h3 id="incumbents" >Escalados: Dimas Andrade e Marcos</h3>
+            <h1 id="day"><%=dataToRender.dayWeek%></h1>
+            <h2 id="service"><%=dataToRender.service%></h2>
+            <h2 id="date"><%=dataToRender.date%></h2>
+            <h3 id="time"><%=dataToRender.time%></h2>
+            <h4 id="incumbents" >Escalados: <%=dataToRender.incumbents%></h4>
             <hr id="splitter-viewcard">
-            <p id="text-view">
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos odit laboriosam voluptatem. Vel aliquam temporibus modi quam corrupti voluptates. Ullam quia commodi iusto laborum cupiditate alias sequi, similique neque consectetur.
-            </p>
+            <audio controls id="player">
+                <source src=<%=dataToRender.urlAudio%>type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
 
     </main>

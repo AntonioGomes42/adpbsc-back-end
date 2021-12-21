@@ -11,7 +11,7 @@ function transformDBData(data){
                     dayWeek:arrayElement[1],
                     service:arrayElement[2],
                     time:arrayElement[3],
-                    inCharger:arrayElement[4],
+                    incumbents:arrayElement[4],
                     urlAudio:arrayElement[5]
                 };
                 jsonDataArray.push(jsonData);

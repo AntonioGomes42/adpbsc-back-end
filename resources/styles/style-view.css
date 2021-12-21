@@ -109,7 +109,7 @@ body{
 main{
     margin: auto;
     display: block;
-    width: 70vw;
+    width: 50vw;
     height: auto;
     border-radius: 5px;
     overflow: hidden;
@@ -127,17 +127,31 @@ main{
 }
 
 #day{
-    padding-top: 80px;
+    padding-top: 60px;
     text-align: center;
     font-weight: 500;
     font-size: 85px;
 }
 
-#data{
-    padding-top: 10px;
+#service{
+    padding-top: 5px;
     text-align: center;
     font-weight: 100;
     font-size: 33px;
+}
+
+#date{
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 32px;
+}
+
+#time{
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 #incumbents{
@@ -154,14 +168,10 @@ main{
     background-color: black;
 }
 
-
-
-#text-view{
-    font-size: 30px;
-    overflow-y: auto;
-    height: 70vh;
-    text-align: justify;
-    width: 88%;
+#player{
+    width: 70%;
+    display: block;
     margin: auto;
 }
+
 
