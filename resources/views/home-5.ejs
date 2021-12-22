@@ -33,8 +33,8 @@
 
     <hr id="splitter">
 
-    <main>
-        <div id="primaryCard" class="card 1">
+    <main id="container">
+        <div id="primaryCard" class="card 1" onclick="openViewPage()">
             <div id="top">
                 <div id="name"><%=dataToRender[0].dayWeek%></div>
                 <div id="service"><%=dataToRender[0].service%></div>
@@ -47,7 +47,7 @@
 
         <div id="secondContainer">
 
-            <div id="secondCard" class="card 2">
+            <div id="secondCard" class="card 2" onclick="openViewPage()">
                 <div id="top">
                     <div id="name"><%=dataToRender[1].dayWeek%></div>
                     <div id="service"><%=dataToRender[1].service%></div>
@@ -61,19 +61,19 @@
 
             <div id="bellowContainer">
 
-                <div id="firstCard" class="bellowCards card 3">
+                <div id="firstCard" class="card 3 bellowCards" onclick="openViewPage()">
                     <div id="name"><%=dataToRender[2].dayWeek%></div>
                     <hr>
                     <a href="#">Clique para saber mais</a>
                 </div>
         
-                <div class="bellowCards putSpace card 4">
+                <div class="card 4 putSpace bellowCards" onclick="openViewPage()">
                     <div id="name"><%=dataToRender[3].dayWeek%></div>
                     <hr>
                     <a href="#">Clique para saber mais</a>
                 </div>
         
-                <div class="bellowCards putSpace card 5">
+                <div class="card 5 putSpace bellowCards" onclick="openViewPage()">
                     <div id="name"><%=dataToRender[5].dayWeek%></div>
                     <hr>
                     <a href="#">Clique para saber mais</a>

@@ -107,6 +107,7 @@ body{
 }
 
 main{
+    pointer-events: none;
     display: flex;
     width: calc(80vw - 10px);
     height: calc(80vh - 10px);
@@ -120,6 +121,7 @@ main{
 }
 
 #primaryCard{
+    pointer-events: all;
     display: relative;
     background-color: white;
     width:60%;
@@ -129,12 +131,14 @@ main{
 }
 
 #primaryCard #top{
+    pointer-events: none;
     display: relative;
     top:0px;
     height: calc(91% - 50px);
 }
 
 #primaryCard #top #name{
+    pointer-events: none;
     padding-left: 30px;
     margin-top:50px;
     font-size: 45px;
@@ -142,6 +146,7 @@ main{
 }
 
 #primaryCard #top #service{
+    pointer-events: none;
     padding-left: 40px;
     margin-top: 10px;
     display: block;
@@ -151,11 +156,13 @@ main{
 
 
 #primaryCard #bottom{
+    pointer-events: none;
     height: 9%;
     bottom: 0px;   
 }
 
 #primaryCard #bottom hr{
+    pointer-events: none;
     border: none;
     background-color: black;
     height: 0.005rem;
@@ -164,6 +171,7 @@ main{
 }
 
 #primaryCard #bottom a{
+    pointer-events: none;
     padding-top: 4px;
     display: block;
     width: 80%;
@@ -172,12 +180,14 @@ main{
 }
 
 #secondContainer{
+    pointer-events: none;
     width: 100%;
     height: calc( 100% - 10px);   
 }
 
 
 #secondCard{
+    pointer-events: all;
     overflow: hidden;
     display: relative;
     background-color: white;
@@ -187,11 +197,13 @@ main{
 }
 
 #secondCard #top{
+    pointer-events: none;
     height: 87%;
     top: 0px;
 }
 
 #secondCard #bottom{
+    pointer-events: none;
     height: 13%;
     bottom: 0px;
 }
@@ -201,12 +213,14 @@ main{
     padding-left: 50px;
     font-size: 45px;
     font-style: bold;
+    pointer-events: none;
 }
 
 #secondCard #top #service{
     font-size: 20px;
     padding-top: 8px;
     padding-left: 61px;
+    pointer-events: none;
 }
 
 #secondCard #bottom hr{
@@ -215,10 +229,11 @@ main{
     height: 0.005rem;
     width: 80%;
     margin: auto;
+    pointer-events: none;
 }
 
 #secondCard #bottom a{
-    
+    pointer-events: none;
     padding-top: 1.5px;
     display: block;
     width: 80%;
@@ -227,6 +242,7 @@ main{
 }
 
 #bellowContainer{
+    pointer-events: none;
     width: calc(100% );
     border-radius:5px;
     display: flex;
@@ -239,6 +255,7 @@ main{
 }
 
 .bellowCards{
+    pointer-events: all;
     background-color: white;
     border-radius: 5px;
     margin-left: 10px;
@@ -250,6 +267,7 @@ main{
 
 
 .bellowCards #name{
+    pointer-events: none;
     padding-top: 20px;
     padding-left: 20px;
     font-size: 24px;
@@ -257,6 +275,7 @@ main{
 }
 
 .bellowCards hr{
+    pointer-events: none;
     border: none;
     background-color: black;
     height: 0.005rem;
@@ -265,6 +284,7 @@ main{
 }
 
 .bellowCards a{
+    pointer-events: none;
     padding-top: 3px;
     display: block;
     text-align: center;

@@ -107,73 +107,40 @@ body{
 }
 
 main{
-    justify-content: center;
-    display: flex;
-    width: calc(80vw - 10px);
-    height: calc(80vh - 10px);
-    margin: 20px auto 10px auto;
+    margin: auto;
+    display: block;
+    width: 50vw;
+    height: auto;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.card:hover{
-    cursor: pointer;
-}
-
-#primaryCard{
-    display: relative;
-    background-color: white;
-    width:60%;
-    height: 100%;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-#primaryCard #top{
-    pointer-events: none;
-    display: relative;
-    top:0px;
-    height: calc(91% - 50px);
-}
-
-#primaryCard #top #name{
-    pointer-events: none;
-    padding-left: 30px;
-    margin-top:50px;
-    font-size: 45px;
-    font-style: bold;
-}
-
-#primaryCard #top #service{
-    pointer-events: none;
-    padding-left: 40px;
-    margin-top: 10px;
-    display: block;
-    font-size: 20px;
-    font-style: bold;
-}
-
-
-#primaryCard #bottom{
-    pointer-events: none;
-    height: 9%;
-    bottom: 0px;   
-}
-
-#primaryCard #bottom hr{
-    pointer-events: none;
-    border: none;
-    background-color: black;
-    height: 0.005rem;
-    width: 80%;
-    margin: auto;
-}
-
-#primaryCard #bottom a{
-    pointer-events: none;
-    padding-top: 4px;
-    display: block;
-    width: 80%;
-    margin: auto;
+#viewcard{
     text-align: center;
+    margin: 20px auto 10px auto;
+    display: block;
+    background-color: white;
+    width:100%;
+    height:calc(100% - 30px);
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+#error-image{
+    color: black;
+    padding-top: 50px;
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+#viewcard > h1{
+    font-size: 50px;
+    color: rgb(53, 50, 68);
+}
+
+#viewcard > h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
 }

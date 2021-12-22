@@ -83,5 +83,6 @@ function whoContainsActivatedClass(){
 }
 
 function openViewPage(event){
+    console.log(event);
     window.open(`/${event.target.classList[1]}`,'_self');
 }

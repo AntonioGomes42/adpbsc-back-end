@@ -107,6 +107,7 @@ body{
 }
 
 main{
+    pointer-events: none;
     display: flex;
     width: calc(80vw - 10px);
     height: calc(80vh - 10px);
@@ -120,6 +121,7 @@ main{
 }
 
 #primaryCard{
+    pointer-events: all;
     display: relative;
     background-color: white;
     width:60%;
@@ -178,12 +180,14 @@ main{
 }
 
 #secondContainer{
+    pointer-events: none;
     width: 100%;
     height: calc( 100% - 10px);   
 }
 
 
 #secondCard{
+    pointer-events: all;
     overflow: hidden;
     display: relative;
     background-color: white;
@@ -238,6 +242,7 @@ main{
 }
 
 #thirdCard{
+    pointer-events: all;
     overflow: hidden;
     display: relative;
     background-color: white;
