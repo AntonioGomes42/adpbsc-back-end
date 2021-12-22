@@ -83,6 +83,6 @@ function whoContainsActivatedClass(){
 }
 
 function openViewPage(event){
-    console.log(event);
-    window.open(`/${event.target.classList[1]}`,'_self');
+    const index = parseInt(event.path[0].attributes[0].value);
+    window.open(`/${index}`,'_self');
 }
