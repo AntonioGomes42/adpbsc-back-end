@@ -78,25 +78,42 @@ body{
     font-weight: 00;
 }
 
-.hover{
+#home{
+    color: #ecf0f1;
+}
+
+#home:hover{
+    cursor: pointer;
+    color: #232B52FE;
     background-color: #ecf0f1;
     transition: all 0.35s ease;
     transition-delay: 50ms;
 }
-
-#home{
-    color: #232B52FE;
-}
-
 
 #gallery{
     margin-left: 10px;
     color: #ecf0f1;
 }
 
+#gallery:hover{
+    cursor: pointer;
+    color: #232B52FE;
+    background-color: #ecf0f1;
+    transition: all 0.35s ease;
+    transition-delay: 50ms;
+}
+
 #about{
     color: #ecf0f1;
     margin-left: 10px;
+}
+
+#about:hover{
+    cursor: pointer;
+    color: #232B52FE;
+    background-color: #ecf0f1;
+    transition: all 0.35s ease;
+    transition-delay: 50ms;
 }
 
 #splitter {
