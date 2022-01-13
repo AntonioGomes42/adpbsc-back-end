@@ -3,6 +3,9 @@ const home = document.getElementById('home');
 const gallery = document.getElementById('gallery');
 const about = document.getElementById('about');
 const main = document.getElementById('container');
+const additionalContent = document.getElementById('additional-content');
+const loadMoreButton = document.getElementById('loadMore');
+const loadMoreText = document.getElementById('loadMoreText');
 //Listeners
 //MouseOver
 home.addEventListener('mouseover', onHover)
@@ -14,6 +17,7 @@ gallery.addEventListener('mouseout', onMouseOut)
 about.addEventListener('mouseout', onMouseOut)
 //OnClick
 main.addEventListener('click',openViewPage);
+loadMoreButton.addEventListener('click', loadMore)
 // Control page functions 
 function onHover(event){
     removeActivatedFromButton();
@@ -80,6 +84,20 @@ function whoContainsActivatedClass(){
         return about;
     }
  return {id:"error"};
+}
+
+function loadMore(){
+    if(additionalContent.style.display === 'block'){
+        additionalContent.style.display = 'none';
+        loadMoreButton.style.transform = 'rotate(45deg)';
+        loadMoreButton.style.marginTop = '0px';
+        loadMoreText.textContent = 'Clique aqui para ver mais';
+    }else{
+        additionalContent.style.display = 'block';
+        loadMoreButton.style.transform = 'rotate(225deg)';
+        loadMoreButton.style.marginTop = '20px';
+        loadMoreText.textContent = 'Clique aqui para ver menos';
+    }
 }
 
 function openViewPage(event){

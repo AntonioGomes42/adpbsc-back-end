@@ -34,60 +34,77 @@
     <hr id="splitter">
 
     <main id="container">
-        <div card="1" id="primaryCard" class="card">
-            <div id="top">
-                <div id="name"><%=dataToRender[0].dayWeek%></div>
-                <div id="service"><%=dataToRender[0].service%></div>
-            </div>
-            <div id="bottom">
-                <hr>
-                <a href="#">Clique para saber mais</a>
-            </div>
-        </div>
+        <div id="principal-content">
 
-        <div id="secondContainer">
-
-            <div card="2" id="secondCard" class="card">
+            <div card="1" id="primaryCard" class="card">
                 <div id="top">
-                    <div id="name"><%=dataToRender[1].dayWeek%></div>
-                    <div id="service"><%=dataToRender[1].service%></div>
+                    <div id="name"><%=dataToRender[0].dayWeek%></div>
+                    <div id="service"><%=dataToRender[0].service%></div>
                 </div>
                 <div id="bottom">
                     <hr>
                     <a href="#">Clique para saber mais</a>
                 </div>
             </div>
+    
+            <div id="secondContainer">
+    
+                <div card="2" id="secondCard" class="card">
+                    <div id="top">
+                        <div id="name"><%=dataToRender[1].dayWeek%></div>
+                        <div id="service"><%=dataToRender[1].service%></div>
+                    </div>
+                    <div id="bottom">
+                        <hr>
+                        <a href="#">Clique para saber mais</a>
+                    </div>
+                </div>
+    
+                <div id="bellowContainer">
+                    
+                    <div card="3" id="firstCard" class="card bellowCards">
+                        <div id="name"><%=dataToRender[2].dayWeek%></div>
+                        <hr>
+                        <a href="#">Clique para saber mais</a>
+                    </div>
+            
+                    <div card="4" class="card putSpace bellowCards">
+                        <div id="name"><%=dataToRender[3].dayWeek%></div>
+                        <hr>
+                        <a href="#">Clique para saber mais</a>
+                    </div>
+            
+                    <div card="5" class="card putSpace bellowCards">
+                        <div id="name"><%=dataToRender[4].dayWeek%></div>
+                        <hr>
+                        <a href="#">Clique para saber mais</a>
+                    </div>
+    
+                </div>
+            </div>
 
-            <div id="bellowContainer">
-                
-                <div card="3" id="firstCard" class="card bellowCards">
-                    <div id="name"><%=dataToRender[2].dayWeek%></div>
-                    <hr>
-                    <a href="#">Clique para saber mais</a>
-                </div>
+        </div>
         
-                <div card="4" class="card putSpace bellowCards">
-                    <div id="name"><%=dataToRender[3].dayWeek%></div>
-                    <hr>
-                    <a href="#">Clique para saber mais</a>
-                </div>
         
-                <div card="5" class="card putSpace bellowCards">
-                    <div id="name"><%=dataToRender[4].dayWeek%></div>
-                    <hr>
-                    <a href="#">Clique para saber mais</a>
+        <div id="additional-content">
+            <div card="6" class="addCard">
+                <div class="addCardContainer">
+                    <div class="addCardName">Segunda-Feira</div>
+                    <div class="addCardService">Ensaio com as irmãs</div>
                 </div>
-
+                <a class="clickHereForMoreInformation" href="#">Clique aqui para saber mais</a>
+                <a id="arrow-right-1" class="arrow-right"></a>
             </div>
         </div>
+
     </main>
 
    <div id="buttonWrapper">  
         <div id="text">Clique aqui para ver mais</div>
-        <a id="loadMore" href="#"> </a>
+        <a id="loadMore"> </a>
     </div>
   
     
-    <script src="../scripts/index.js"></script>
+    <script src="../scripts/index-homefull.js"></script>
 </body>
 </html>
