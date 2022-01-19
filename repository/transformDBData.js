@@ -1,4 +1,3 @@
- // -------- Function to get Data read to use  ------------
 function transformDBData(data){
     return new Promise((res) => {
         if(!data.length){
