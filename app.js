@@ -3,7 +3,6 @@ import express from 'express';
 import getData from './repository/getData.js';
 import renderHome from './service/renderHome.js'
 import renderView from './service/renderView.js';
-// import cors from 'cors';
 // Consts
 const server = express();
 const port = 3000;
