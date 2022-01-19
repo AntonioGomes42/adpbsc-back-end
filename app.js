@@ -7,14 +7,8 @@ import renderView from './service/renderView.js';
 // Consts
 const server = express();
 const port = 3000;
-// const corsOptions ={
-//    origin:'*', 
-//    credentials:true,            
-//    optionSuccessStatus:200,
-// }
 
 // --------- Pre-config server ---------
-// server.use(cors(corsOptions))
 server.use(express.static("./resources"));
 server.set("views", './resources/views');
 server.set("view engine", "ejs");
