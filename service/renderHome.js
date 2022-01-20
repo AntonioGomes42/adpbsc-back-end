@@ -11,8 +11,7 @@ async function renderHome(req,res){
             res.render('home', { dataToRender:data});
             break;
         case dataLength == -1:
-            console.log("erro");
-            res.send("erro");
+            res.render('nodata',{});
             break;
     }      
 }

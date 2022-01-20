@@ -1,0 +1,164 @@
+*{
+    font-family: 'Open Sans','Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: #232B52FE;
+}
+
+#header{
+    display: flex;
+    margin: 15px 10px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 90;
+    justify-content:space-evenly;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+#header-identification{
+    margin-left: 4rem;
+    display:flex;
+    flex:1;
+}
+
+#header-identification-text{
+    margin-left: 1rem;
+}
+
+#logo{
+    width: 110px;
+}
+
+.textoLogo{
+    color: #ecf0f1;
+}
+
+.sigla{
+    font-size: 40px;
+    letter-spacing: 0.35rem;
+    font-weight: 600;
+}
+
+.cidade{
+    text-align: left;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+#header-nav-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 80px;
+    
+    
+}
+
+.button{
+    border-radius: 20px;
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #232B52FE;
+    width: 115px;
+    height: 50px;
+    font-weight: 00;
+}
+
+#home{
+    color: #ecf0f1;
+}
+
+#home:hover{
+    cursor: pointer;
+    color: #232B52FE;
+    background-color: #ecf0f1;
+    transition: all 0.35s ease;
+    transition-delay: 50ms;
+}
+
+#gallery{
+    margin-left: 10px;
+    color: #ecf0f1;
+}
+
+#gallery:hover{
+    cursor: pointer;
+    color: #232B52FE;
+    background-color: #ecf0f1;
+    transition: all 0.35s ease;
+    transition-delay: 50ms;
+}
+
+#about{
+    color: #ecf0f1;
+    margin-left: 10px;
+}
+
+#about:hover{
+    cursor: pointer;
+    color: #232B52FE;
+    background-color: #ecf0f1;
+    transition: all 0.35s ease;
+    transition-delay: 50ms;
+}
+
+#splitter {
+    margin: auto;
+    height: 0.13rem;
+    width: 93vw;
+    background-color: #ecf0f1;
+}
+
+main{
+    margin: auto;
+    display: block;
+    width: 50vw;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#viewcard{
+    text-align: center;
+    margin: 20px auto 10px auto;
+    display: block;
+    background-color: white;
+    width:100%;
+    height:calc(100% - 30px);
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+#nodata-image{
+    color: black;
+    padding-top: 50px;
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+#viewcard > h1{
+    margin-top: 11px;
+    font-size: 50px;
+    color: rgb(53, 50, 68);
+}
+
+#viewcard > h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}

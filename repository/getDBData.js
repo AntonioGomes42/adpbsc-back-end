@@ -1,6 +1,6 @@
 // Imports
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, onValue, goOffline, goOnline } from "firebase/database";
+import { getDatabase, ref, onValue, goOffline, goOnline, off } from "firebase/database";
 import { readFile } from 'fs/promises';
 import dotenv from 'dotenv';
 // Require and Consts
@@ -12,15 +12,20 @@ const db = getDatabase();
 async function getDBData(){
   goOnline(db);
   return new Promise((res) => {
-                onValue(ref(db, `${process.env.DATA_PATH}`), (snapshot) => {
-                const returnedDbData = snapshot.val();
-                const transformedDbData = JSON.parse(returnedDbData);
-                goOffline(db);
-                res(transformedDbData);
-            }, {
+            onValue(ref(db, `${process.env.DATA_PATH}`), (snapshot) => {
+            const returnedDbData = snapshot.val();
+            goOffline(db);
+            if(!returnedDbData){
+              res([]);
+            }else{
+              const transformedDbData = JSON.parse(returnedDbData);
+              res(transformedDbData); 
+            }     
+            },{
               onlyOnce: true
             });
-    });
-}
+          
+        })
+};
 
 export default getDBData;
