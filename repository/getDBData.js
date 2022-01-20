@@ -1,6 +1,6 @@
 // Imports
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, onValue, goOffline, goOnline, off } from "firebase/database";
+import { getDatabase, ref, onValue, goOffline, goOnline } from "firebase/database";
 import { readFile } from 'fs/promises';
 import dotenv from 'dotenv';
 // Require and Consts
