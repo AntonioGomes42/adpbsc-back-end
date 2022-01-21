@@ -7,11 +7,11 @@ import path from 'path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 async function cache(req, res){
-    const filePath = path.join(__dirname, '../cache/html.html');
+    const filePath = path.join(__dirname, '../cache/home.html');
     if(!(fs. existsSync(filePath))){
         await cacheHtml();
     }
-    res.sendFile(path.join(__dirname, '../cache/html.html'));
+    res.sendFile(filePath);
 }
 
 export default cache;

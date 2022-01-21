@@ -11,7 +11,7 @@ async function cacheHtml(){
     const data = await getData();
     const template = fs.readFileSync((path.join(__dirname,'../resources/views/home.ejs')), 'utf-8');
     const html = ejs.render ( template , { dataToRender:data} );
-    fs.writeFileSync("cache/html.html", html, 'utf8');
+    fs.writeFileSync("cache/home.html", html, 'utf8');
 }
 
 export default cacheHtml;
