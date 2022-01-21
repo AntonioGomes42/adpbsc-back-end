@@ -344,6 +344,9 @@ main{
     margin-top:8px;
     width: calc(80vw - 10px);
 }
+.addCardContainer{
+    pointer-events: none;
+}
 
 .addCard{
     pointer-events: all;
