@@ -1,5 +1,6 @@
 // Imports
 import express from 'express';
+import cache from './service/cache.js';
 import getData from './repository/getData.js';
 import renderHome from './service/renderHome.js'
 import renderView from './service/renderView.js';
@@ -24,6 +25,10 @@ server.get('/api/v1', async (req,res) => {
 
 server.get('/', (req, res)=>{
     renderHome(req,res);
+});
+
+server.get('/test', (req, res)=>{
+    cache(req,res);
 });
 
 server.get('/:index', async (req, res)=>{
