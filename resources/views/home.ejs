@@ -87,15 +87,18 @@
         
         
         <div id="additional-content">
-            <div card="6" class="addCard">
+            <% for (var index=5; index<dataToRender.length ; index++){  %>   
+            <div card="<%=(index+1)%>" class="addCard">
                 <div class="addCardContainer">
-                    <div class="addCardName">Segunda-Feira</div>
-                    <div class="addCardService">Ensaio com as irmãs</div>
+                    <div class="addCardName"><%= dataToRender[index].dayWeek %></div>
+                    <div class="addCardService"><%= dataToRender[index].service %></div>
                 </div>
                 <a class="clickHereForMoreInformation" href="#">Clique aqui para saber mais</a>
                 <a id="arrow-right-1" class="arrow-right"></a>
             </div>
+            <%} %>
         </div>
+        
 
     </main>
 
