@@ -2,7 +2,8 @@ import getDBData from '../repository/getDBData.js';
 import transformDBData from './transformDBData.js';
 
 async function getData(){
-    const data = await transformDBData(await getDBData());
+    const dbData = await getDBData();
+    const data = await transformDBData(dbData);
     return data;
 }
 

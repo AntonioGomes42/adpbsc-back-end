@@ -1,7 +1,9 @@
 import getData from "../../repository/getData.js";
+import getCachedData from "../cache/dataCache.js";
 
 async function renderHome(req,res){
-    const data = await getData();
+    const data = await getCachedData();
+    // const data = await getData();
     const dataLength = data.length;
     switch (true) {
         case dataLength>0 && dataLength<=5:
