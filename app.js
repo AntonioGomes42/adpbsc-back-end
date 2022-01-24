@@ -1,9 +1,10 @@
 // Imports
 import express from 'express';
-import cache from './service/cache.js';
+import cache from './service/cache/getCachedPage.js';
 import getData from './repository/getData.js';
-import renderHome from './service/renderHome.js'
-import renderView from './service/renderView.js';
+import renderHome from './service/render/renderHome.js'
+import renderView from './service/render/renderView.js';
+
 // Consts
 const server = express();
 const port = 3000;
@@ -25,6 +26,10 @@ server.get('/api/v1', async (req,res) => {
 
 server.get('/', (req, res)=>{
     renderHome(req,res);
+});
+
+server.get('/cookie', (req, res)=>{
+    res.cookie('cookie', ).send("Cookie has been set!")
 });
 
 server.get('/test', (req, res)=>{

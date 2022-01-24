@@ -1,4 +1,4 @@
-import cacheHtml from "./setCache.js";
+import cacheHtml from "./setPageCache.js";
 import fs from 'fs';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -7,7 +7,7 @@ import path from 'path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 async function cache(req, res){
-    const filePath = path.join(__dirname, '../cache/home.html');
+    const filePath = path.join(__dirname, '../../cached_pages/home.html');
     if(!(fs. existsSync(filePath))){
         await cacheHtml();
     }

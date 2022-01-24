@@ -1,4 +1,4 @@
-import getData from "../repository/getData.js";
+import getData from "../../repository/getData.js";
 
 async function renderView(req,res){
     const data = await getData();
